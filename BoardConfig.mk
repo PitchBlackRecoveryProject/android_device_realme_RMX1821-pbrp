@@ -47,7 +47,8 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Kernel
 TARGET_IS_64_BIT := true
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
+BOARD_KERNEL_CMDLINE += veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x14f88000 --tags_offset 0x13f88000
@@ -97,10 +98,8 @@ TW_NO_REBOOT_BOOTLOADER := false
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 80
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TW_SCREEN_BLANK_ON_BOOT := true
 
 # Misc
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
