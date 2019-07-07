@@ -1,3 +1,3 @@
 # TWRP Tree for Realme 3
 
-* Minimal device tree for building TWRP for ``rmx1833``
+* Minimal device tree for building TWRP for ``rmx1821/rmx1825``
