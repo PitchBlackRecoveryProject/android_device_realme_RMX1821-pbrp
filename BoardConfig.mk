@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/realme/rmx1833
+LOCAL_PATH := device/realme/rmx1821
 
 # Platform
 TARGET_BOOTLOADER_BOARD_NAME := mt6771
@@ -55,7 +55,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x14f88000 --tags_offset 0x13f88000
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
-TARGET_PREBUILT_KERNEL := device/realme/rmx1833/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/realme/rmx1821/prebuilt/kernel
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432 
@@ -113,4 +113,4 @@ TARGET_USES_NTFS := true
 TW_USE_TOOLBOX := true
 
 # Fstab
-PRODUCT_COPY_FILES += device/realme/rmx1833/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/realme/rmx1821/twrp.fstab:recovery/root/etc/twrp.fstab
